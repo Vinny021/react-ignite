@@ -21,3 +21,13 @@ body{
     background: #333;
     color: rgb(187, 180, 169);
 }
+
+button{
+    color: #333;
+    background-color: rgb(1, 151, 151);
+    padding: 5px;
+
+    &:hover{
+        background-color: rgb(5, 212, 212);
+    }
+}
