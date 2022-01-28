@@ -4,8 +4,20 @@
     box-sizing: border-box;
 }
 
+a{
+    &:link{
+        color: rgb(4, 190, 190);
+    }
+    &:visited{
+        color: rgb(1, 151, 151);
+    }
+    &:hover{
+        color: rgb(5, 212, 212);
+    }
+}
+
 body{
-    font: Arial, Helvetica, sans-serif;
+    font: 16px "Helvetica Neue", Arial, sans-serif;
     background: #333;
-    color: wheat;
+    color: rgb(187, 180, 169);
 }
