@@ -2,12 +2,6 @@ import { RepositoryItem } from "./RepositoryItem";
 import { useEffect, useState } from "react";
 import "../styles/repositories.scss";
 
-const repositoryMock = {
-  name: "unform",
-  description: "Unform Repository",
-  link: "https://github.com/unform/unform",
-};
-
 export function RepositoryList() {
   const [repositories, setRepositories] = useState([]);
 
@@ -24,9 +18,9 @@ export function RepositoryList() {
       <h1> Repository List</h1>
 
       <ul>
-        <RepositoryItem repository={repositoryMock} />
-        <RepositoryItem repository={repositoryMock} />
-        <RepositoryItem repository={repositoryMock} />
+        {repositories.map((repository) => {
+          return <RepositoryItem key={repository.id} repository={repository} />;
+        })}
       </ul>
     </section>
   );
